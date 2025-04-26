@@ -2,7 +2,8 @@ package com.example.patterns_banking.services.commands;
 
 import com.example.patterns_banking.models.Account;
 
+import java.util.List;
 
-public interface ICommand<T> {
-  Account execute();
+public interface ICommandGet<T> {
+    List<Account> execute();
 }
