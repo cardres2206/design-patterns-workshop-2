@@ -31,7 +31,7 @@ public class AccountService {
     ICommand<Account> command = new DepositCommand(accountRepository, accountId, amount);
     return command.execute();
   }
-  public List<Account> getAccounts(AccountDTO accountDTO){
+  public List<Account> getAccounts(){
     ICommandGet<Account> command = new ListAccountCommand(accountRepository);
     return command.execute();
   }
